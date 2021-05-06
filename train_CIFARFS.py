@@ -20,52 +20,7 @@ import learn2learn as l2l
 import logging
 import datetime
 from CifarCNN import *
-from utils import accuracy
-
-
-def fast_adapt(
-        batch,
-        features,
-        classifier,
-        update,
-        diff_sgd,
-        loss,
-        adaptation_steps,
-        shots,
-        ways,
-        device):
-    data, labels = batch
-    data, labels = data.to(device), labels.to(device)
-    data = features(data)
-
-    # Separate data into adaptation/evalutation sets
-    adaptation_indices = np.zeros(data.size(0), dtype=bool)
-    adaptation_indices[np.arange(shots*ways) * 2] = True
-    evaluation_indices = torch.from_numpy(~adaptation_indices)
-    adaptation_indices = torch.from_numpy(adaptation_indices)
-    adaptation_data, adaptation_labels = data[adaptation_indices], labels[adaptation_indices]
-    evaluation_data, evaluation_labels = data[evaluation_indices], labels[evaluation_indices]
-
-    # Adapt the model & learned update
-    for step in range(adaptation_steps):
-        adaptation_error = loss(classifier(adaptation_data), adaptation_labels)
-        if step > 0:  # Update the learnable update function
-            update_grad = torch.autograd.grad(adaptation_error,
-                                              update.parameters(),
-                                              create_graph=True,
-                                              retain_graph=True)
-            diff_sgd(update, update_grad)
-        classifier_updates = update(adaptation_error,
-                                    classifier.parameters(),
-                                    create_graph=True,
-                                    retain_graph=True)
-        diff_sgd(classifier, classifier_updates)
-
-    # Evaluate the adapted model
-    predictions = classifier(evaluation_data)
-    eval_error = loss(predictions, evaluation_labels)
-    eval_accuracy = accuracy(predictions, evaluation_labels)
-    return eval_error, eval_accuracy
+from utils import *
 
 
 def main(
@@ -94,11 +49,11 @@ def main(
         train_ways=ways,
         test_samples=2*shots,
         test_ways=ways,
-        root='/data',
+        root='data',
     )
 
     logPath = str(ways) + '-ways' + str(shots) + '-shots.CIFARFS.' + 'out.log'
-    logging.basicConfig(filename=logPath, level=logging.DEBUG)
+    logging.basicConfig(filename=logPath, level=logging.INFO)
     logging.info(datetime.datetime.now())
 
     # Create model and learnable update
@@ -130,7 +85,7 @@ def main(
             task_classifier = l2l.clone_module(classifier)
             task_update = l2l.clone_module(fast_update)
             batch = tasksets.train.sample()
-            evaluation_error, evaluation_accuracy = fast_adapt(batch,
+            evaluation_error, evaluation_accuracy = fast_adapt_cifarfs(batch,
                                                                task_features,
                                                                task_classifier,
                                                                task_update,
@@ -149,7 +104,7 @@ def main(
             task_classifier = l2l.clone_module(classifier)
             task_update = l2l.clone_module(fast_update)
             batch = tasksets.validation.sample()
-            evaluation_error, evaluation_accuracy = fast_adapt(batch,
+            evaluation_error, evaluation_accuracy = fast_adapt_cifarfs(batch,
                                                                task_features,
                                                                task_classifier,
                                                                task_update,
@@ -199,7 +154,7 @@ def main(
         task_classifier = l2l.clone_module(classifier)
         task_update = l2l.clone_module(fast_update)
         batch = tasksets.test.sample()
-        evaluation_error, evaluation_accuracy = fast_adapt(batch,
+        evaluation_error, evaluation_accuracy = fast_adapt_cifarfs(batch,
                                                            task_features,
                                                            task_classifier,
                                                            task_update,
@@ -213,7 +168,8 @@ def main(
         meta_test_accuracy += evaluation_accuracy.item()
     print('Meta Test Error', meta_test_error / meta_batch_size)
     print('Meta Test Accuracy', meta_test_accuracy / meta_batch_size)
-
+    logging.info('Meta Test Error %s', str(meta_test_error / meta_batch_size))
+    logging.info('Meta Test Accuracy %s', str(meta_test_accuracy / meta_batch_size))
 
 if __name__ == '__main__':
     main()
