@@ -1,0 +1,270 @@
+INFO:root:2021-05-05 18:23:16.896829
+INFO:root:2021-05-05 18:23:49.493122
+INFO:root:Iteration 0
+INFO:root:Meta Train Error 6.9965207278728485
+INFO:root:Meta Train Accuracy 0.21749999094754457
+INFO:root:Meta Valid Error 7.403120964765549
+INFO:root:Meta Valid Accuracy 0.21374999172985554
+INFO:root:
+
+INFO:root:2021-05-05 18:30:15.914112
+INFO:root:Iteration 100
+INFO:root:Meta Train Error 1.610145203769207
+INFO:root:Meta Train Accuracy 0.19999998807907104
+INFO:root:Meta Valid Error 1.6094487644731998
+INFO:root:Meta Valid Accuracy 0.19999998807907104
+INFO:root:
+
+INFO:root:2021-05-05 18:36:37.317112
+INFO:root:Iteration 200
+INFO:root:Meta Train Error 1.6087927259504795
+INFO:root:Meta Train Accuracy 0.19999998854473233
+INFO:root:Meta Valid Error 1.609437707811594
+INFO:root:Meta Valid Accuracy 0.19999998807907104
+INFO:root:
+
+INFO:root:2021-05-05 18:42:52.392111
+INFO:root:Iteration 300
+INFO:root:Meta Train Error 1.6094379648566246
+INFO:root:Meta Train Accuracy 0.19999998807907104
+INFO:root:Meta Valid Error 1.6902842074632645
+INFO:root:Meta Valid Accuracy 0.19749998836778104
+INFO:root:
+
+INFO:root:2021-05-05 18:49:07.261115
+INFO:root:Iteration 400
+INFO:root:Meta Train Error 1.609438844025135
+INFO:root:Meta Train Accuracy 0.19999998807907104
+INFO:root:Meta Valid Error 1.632310375571251
+INFO:root:Meta Valid Accuracy 0.19999998807907104
+INFO:root:
+
+INFO:root:2021-05-05 18:55:23.082111
+INFO:root:Iteration 500
+INFO:root:Meta Train Error 1.6109123602509499
+INFO:root:Meta Train Accuracy 0.20124998944811523
+INFO:root:Meta Valid Error 1.6117935553193092
+INFO:root:Meta Valid Accuracy 0.20374998869374394
+INFO:root:
+
+INFO:root:2021-05-05 19:01:37.747111
+INFO:root:Iteration 600
+INFO:root:Meta Train Error 1.6094380132853985
+INFO:root:Meta Train Accuracy 0.19999998807907104
+INFO:root:Meta Valid Error 1.6094379425048828
+INFO:root:Meta Valid Accuracy 0.19999998807907104
+INFO:root:
+
+INFO:root:2021-05-05 19:07:52.222111
+INFO:root:Iteration 700
+INFO:root:Meta Train Error 1.6094378679990768
+INFO:root:Meta Train Accuracy 0.19999998807907104
+INFO:root:Meta Valid Error 1.6094378419220448
+INFO:root:Meta Valid Accuracy 0.19999998807907104
+INFO:root:
+
+INFO:root:2021-05-05 19:14:07.096113
+INFO:root:Iteration 800
+INFO:root:Meta Train Error 1.6094378270208836
+INFO:root:Meta Train Accuracy 0.19999998807907104
+INFO:root:Meta Valid Error 1.6094378270208836
+INFO:root:Meta Valid Accuracy 0.19999998807907104
+INFO:root:
+
+INFO:root:2021-05-05 19:20:22.343111
+INFO:root:Iteration 900
+INFO:root:Meta Train Error 1.6094672679901123
+INFO:root:Meta Train Accuracy 0.201249988283962
+INFO:root:Meta Valid Error 1.6094378493726254
+INFO:root:Meta Valid Accuracy 0.19999998807907104
+INFO:root:
+
+INFO:root:2021-05-05 19:26:36.800110
+INFO:root:Iteration 1000
+INFO:root:Meta Train Error 1.6094379909336567
+INFO:root:Meta Train Accuracy 0.19999998807907104
+INFO:root:Meta Valid Error 1.6094379723072052
+INFO:root:Meta Valid Accuracy 0.19999998807907104
+INFO:root:
+
+INFO:root:2021-05-05 19:32:53.893112
+INFO:root:Iteration 1100
+INFO:root:Meta Train Error 1.6094378754496574
+INFO:root:Meta Train Accuracy 0.19999998807907104
+INFO:root:Meta Valid Error 1.6094378978013992
+INFO:root:Meta Valid Accuracy 0.19999998807907104
+INFO:root:
+
+INFO:root:2021-05-05 19:39:12.024110
+INFO:root:Iteration 1200
+INFO:root:Meta Train Error 1.6094379127025604
+INFO:root:Meta Train Accuracy 0.19999998807907104
+INFO:root:Meta Valid Error 1.6094400882720947
+INFO:root:Meta Valid Accuracy 0.19999998807907104
+INFO:root:
+
+INFO:root:2021-05-05 19:45:33.440110
+INFO:root:Iteration 1300
+INFO:root:Meta Train Error 1.6094378270208836
+INFO:root:Meta Train Accuracy 0.19999998807907104
+INFO:root:Meta Valid Error 1.609437894076109
+INFO:root:Meta Valid Accuracy 0.19999998807907104
+INFO:root:
+
+INFO:root:2021-05-05 19:51:51.755112
+INFO:root:Iteration 1400
+INFO:root:Meta Train Error 1.6094378493726254
+INFO:root:Meta Train Accuracy 0.19999998807907104
+INFO:root:Meta Valid Error 1.6094378679990768
+INFO:root:Meta Valid Accuracy 0.19999998807907104
+INFO:root:
+
+INFO:root:2021-05-05 19:58:09.506774
+INFO:root:Iteration 1500
+INFO:root:Meta Train Error 1.6094379909336567
+INFO:root:Meta Train Accuracy 0.19999998807907104
+INFO:root:Meta Valid Error 1.6093999110162258
+INFO:root:Meta Valid Accuracy 0.19999998807907104
+INFO:root:
+
+INFO:root:2021-05-05 20:04:24.464492
+INFO:root:Iteration 1600
+INFO:root:Meta Train Error 1.6094379760324955
+INFO:root:Meta Train Accuracy 0.19999998807907104
+INFO:root:Meta Valid Error 1.609437920153141
+INFO:root:Meta Valid Accuracy 0.19999998807907104
+INFO:root:
+
+INFO:root:2021-05-05 20:10:39.234494
+INFO:root:Iteration 1700
+INFO:root:Meta Train Error 1.6094380617141724
+INFO:root:Meta Train Accuracy 0.19999998807907104
+INFO:root:Meta Valid Error 1.6094380430877209
+INFO:root:Meta Valid Accuracy 0.19999998807907104
+INFO:root:
+
+INFO:root:2021-05-05 20:16:55.497653
+INFO:root:Iteration 1800
+INFO:root:Meta Train Error 1.609437957406044
+INFO:root:Meta Train Accuracy 0.19999998807907104
+INFO:root:Meta Valid Error 1.609437931329012
+INFO:root:Meta Valid Accuracy 0.19999998807907104
+INFO:root:
+
+INFO:root:2021-05-05 20:23:11.453983
+INFO:root:Iteration 1900
+INFO:root:Meta Train Error 1.609437718987465
+INFO:root:Meta Train Accuracy 0.19999998807907104
+INFO:root:Meta Valid Error 1.609437681734562
+INFO:root:Meta Valid Accuracy 0.19999998807907104
+INFO:root:
+
+INFO:root:2021-05-05 20:29:26.402983
+INFO:root:Iteration 2000
+INFO:root:Meta Train Error 1.6094378493726254
+INFO:root:Meta Train Accuracy 0.19999998807907104
+INFO:root:Meta Valid Error 1.609437819570303
+INFO:root:Meta Valid Accuracy 0.19999998807907104
+INFO:root:
+
+INFO:root:2021-05-05 20:35:42.043983
+INFO:root:Iteration 2100
+INFO:root:Meta Train Error 1.6094377972185612
+INFO:root:Meta Train Accuracy 0.19999998807907104
+INFO:root:Meta Valid Error 1.6094377785921097
+INFO:root:Meta Valid Accuracy 0.19999998807907104
+INFO:root:
+
+INFO:root:2021-05-05 20:41:57.015983
+INFO:root:Iteration 2200
+INFO:root:Meta Train Error 1.6094376519322395
+INFO:root:Meta Train Accuracy 0.19999998807907104
+INFO:root:Meta Valid Error 1.6094376742839813
+INFO:root:Meta Valid Accuracy 0.19999998807907104
+INFO:root:
+
+INFO:root:2021-05-05 20:48:12.051984
+INFO:root:Iteration 2300
+INFO:root:Meta Train Error 1.6094379499554634
+INFO:root:Meta Train Accuracy 0.19999998807907104
+INFO:root:Meta Valid Error 1.6094378717243671
+INFO:root:Meta Valid Accuracy 0.19999998807907104
+INFO:root:
+
+INFO:root:2021-05-05 20:54:27.357984
+INFO:root:Iteration 2400
+INFO:root:Meta Train Error 1.6094377413392067
+INFO:root:Meta Train Accuracy 0.19999998807907104
+INFO:root:Meta Valid Error 1.6094378232955933
+INFO:root:Meta Valid Accuracy 0.19999998807907104
+INFO:root:
+
+INFO:root:2021-05-05 21:00:42.510984
+INFO:root:Iteration 2500
+INFO:root:Meta Train Error 1.6094378307461739
+INFO:root:Meta Train Accuracy 0.19999998807907104
+INFO:root:Meta Valid Error 1.6094378121197224
+INFO:root:Meta Valid Accuracy 0.19999998807907104
+INFO:root:
+
+INFO:root:2021-05-05 21:06:57.597984
+INFO:root:Iteration 2600
+INFO:root:Meta Train Error 1.6094378903508186
+INFO:root:Meta Train Accuracy 0.19999998807907104
+INFO:root:Meta Valid Error 1.609437756240368
+INFO:root:Meta Valid Accuracy 0.19999998807907104
+INFO:root:
+
+INFO:root:2021-05-05 21:13:12.735983
+INFO:root:Iteration 2700
+INFO:root:Meta Train Error 1.609437882900238
+INFO:root:Meta Train Accuracy 0.19999998807907104
+INFO:root:Meta Valid Error 1.609437894076109
+INFO:root:Meta Valid Accuracy 0.19999998807907104
+INFO:root:
+
+INFO:root:2021-05-05 21:19:27.658983
+INFO:root:Iteration 2800
+INFO:root:Meta Train Error 1.6094377264380455
+INFO:root:Meta Train Accuracy 0.19999998807907104
+INFO:root:Meta Valid Error 1.6094377636909485
+INFO:root:Meta Valid Accuracy 0.19999998807907104
+INFO:root:
+
+INFO:root:2021-05-05 21:25:52.072214
+INFO:root:Iteration 2900
+INFO:root:Meta Train Error 1.609437994658947
+INFO:root:Meta Train Accuracy 0.19999998807907104
+INFO:root:Meta Valid Error 1.609437983483076
+INFO:root:Meta Valid Accuracy 0.19999998807907104
+INFO:root:
+
+INFO:root:2021-05-05 21:32:15.745838
+INFO:root:Iteration 3000
+INFO:root:Meta Train Error 1.609437718987465
+INFO:root:Meta Train Accuracy 0.19999998807907104
+INFO:root:Meta Valid Error 1.609437718987465
+INFO:root:Meta Valid Accuracy 0.19999998807907104
+INFO:root:
+
+INFO:root:2021-05-05 21:38:47.885165
+INFO:root:Iteration 3100
+INFO:root:Meta Train Error 1.6094377376139164
+INFO:root:Meta Train Accuracy 0.19999998807907104
+INFO:root:Meta Valid Error 1.6094376258552074
+INFO:root:Meta Valid Accuracy 0.19999998807907104
+INFO:root:
+
+INFO:root:2021-05-05 21:42:50.227711
+INFO:root:2021-05-05 21:44:47.263710
+INFO:root:2021-05-05 21:45:23.558707
+INFO:root:Meta Test Error 1.6094377636909485
+INFO:root:Meta Test Accuracy 0.19999998807907104
+INFO:root:2021-05-05 21:45:43.254708
+INFO:root:Iteration 3200
+INFO:root:Meta Train Error 1.6094378158450127
+INFO:root:Meta Train Accuracy 0.19999998807907104
+INFO:root:Meta Valid Error 1.6094378307461739
+INFO:root:Meta Valid Accuracy 0.19999998807907104
+INFO:root:
+
