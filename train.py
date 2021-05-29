@@ -107,19 +107,19 @@ def main(
         print('Meta Valid Error', meta_valid_error / meta_batch_size)
         print('Meta Valid Accuracy', meta_valid_accuracy / meta_batch_size)
 
-        if iteration % 100 == 0 or iteration == num_iterations - 1:
-            logging.info(datetime.datetime.now())
-            logging.info('Iteration %s', str(iteration))
-            logging.info('Meta Train Error %s', str(meta_train_error / meta_batch_size))
-            logging.info('Meta Train Accuracy %s', str(meta_train_accuracy / meta_batch_size))
-            logging.info('Meta Valid Error %s', str(meta_valid_error / meta_batch_size))
-            logging.info('Meta Valid Accuracy %s', str(meta_valid_accuracy / meta_batch_size))
-            logging.info('\n')
-
-            path = "./out/" + str(ways) + "-way" + str(shots) + "-shot"
-            if not os.path.exists(path):
-                os.makedirs(path)
-            torch.save(model.state_dict(), path + "/model" + str(iteration))
+        # if iteration % 100 == 0 or iteration == num_iterations - 1:
+        #     logging.info(datetime.datetime.now())
+        #     logging.info('Iteration %s', str(iteration))
+        #     logging.info('Meta Train Error %s', str(meta_train_error / meta_batch_size))
+        #     logging.info('Meta Train Accuracy %s', str(meta_train_accuracy / meta_batch_size))
+        #     logging.info('Meta Valid Error %s', str(meta_valid_error / meta_batch_size))
+        #     logging.info('Meta Valid Accuracy %s', str(meta_valid_accuracy / meta_batch_size))
+        #     logging.info('\n')
+        #
+        #     path = "./out/" + str(ways) + "-way" + str(shots) + "-shot"
+        #     if not os.path.exists(path):
+        #         os.makedirs(path)
+        #     torch.save(model.state_dict(), path + "/model" + str(iteration))
 
         # Average the accumulated gradients and optimize
         for p in maml.parameters():
